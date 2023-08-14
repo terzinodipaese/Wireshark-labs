@@ -1,0 +1,19 @@
+1) Both the browser and the web server are running HTTP/1.1. You get this information from the first line of request and answer
+2) Looking at the Accept-Language request header, the answer is en US
+3) The IP address of the computer (the client IP address) is 10.0.0.4, the server IP address (the IP corresponding to domain gaia.cs.umass.edu) is 128.119.245.12
+4) The status code returned for the web server to the browser is 200 OK
+5) Looking at the Last-Modified response header, the answer is Sat, 30 Jan 2021 06:59:02 GMT
+6) Looking at the Content-Lenght response header, the answer is 128 bytes
+7) All headers within the data all listed in the packet-listing window
+8) No
+9) Yes, I can say this from the presence of Content-Length response header. Also, in the raw data, I can see the HTML page payload after all response headers
+10) Yes, and its value is Sat, 30 Jan 2021 06:59:02 GMT
+11) The status is 304 Not Modified, infact, there is no payload in the response. Also, the Content-Length response header is not present
+12) Just a single HTTP GET request. This HTTP GET request is contained in frame 26
+13) Frame 28
+14) 200 OK
+15) The entire HTTP response is contained in 4 TCP segments (frame 28, 29, 31 and 32), because the first TCP segment (frame 28) also contains a bit of the payload
+16) 4 HTTP GET requests, to the server IP: 128.119.245.12, 178.79.137.164, 104.98.115.146
+17) Although the two source ports are different, the answer to the request for the first image (pearson.png) is received before the request for the second image (8E_cover_small.jpg) is sent, so they are get serially
+18) 401 Unauthorized
+19) The Authorization request header
